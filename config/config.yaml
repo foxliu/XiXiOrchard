@@ -1,0 +1,7 @@
+api_key: "your_api_key"
+db_host: "127.0.0.1"
+db_user: "lux"
+db_password: "U&I*o9p0"
+db_name: "xixiorchard"
+log_level: "info"
+market_api: "https://api.marketdata.com"

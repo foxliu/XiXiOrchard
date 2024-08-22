@@ -1,0 +1,17 @@
+<Window x:Class="XiXiOrchard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        Title="XiXiOrchard" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="StrategySelector" Margin="10" Width="200" HorizontalAlignment="Left">
+            <ComboBoxItem Content="Simple Moving Average" />
+            <ComboBoxItem Content="Exponential Moving Average" />
+        </ComboBox>
+        <Button Content="Run Backtest" Margin="10" Width="100" Height="30" VerticalAlignment="Top"
+                HorizontalAlignment="Left" Click="OnRunBacktestClick"/>
+        <oxy:PlotView x:Name="ResultPlotView" Margin="10" VerticalAlignment="Top" Height="300" />
+        <TextBlock x:Name="ResultTextBlock" Margin="10,320,10,10" Text="Results will appear here..."
+                   VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="400" TextWrapping="Wrap"/>
+    </Grid>
+</Window>
